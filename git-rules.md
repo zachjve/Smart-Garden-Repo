@@ -31,7 +31,7 @@ Pour verifier que vous êtes sur votre branch de fonctionnalitée :
 git branch
 ```
 
-Pour bien faire en sorte que la branche contient tout les MAJ du main  :
+Pour bien faire en sorte que la branche contient tout les MAJ du fork main  :
 
 ```bash
 git merge main
@@ -39,7 +39,7 @@ git merge main
 
 ###### Commencer à travailler votre fonctionnalitée sur la branch. 
 
-Une fois que la branche est créé et contient toute les MAJ `travailler sur votre fonctionnalitée`. Pendant que vous travaillez vous devez faire vos `add` vos `commit` et `push` toujours sur la branche de fonctionnalitée en s'assurant de bien push vers la branche. 
+Une fois que la branche est créé et contient toute les MAJ `travailler sur votre fonctionnalitée`. Pendant que vous travaillez vous devez faire vos `add` vos `commit` et `push` toujours sur la branche de fonctionnalitée en s'assurant de bien push vers la fork. 
 
 Pour cela verifier le remote (l'endroit ou sera push le travail) :
 
@@ -47,10 +47,10 @@ Pour cela verifier le remote (l'endroit ou sera push le travail) :
 git remote -v
 ```
 
-Pour changer le remote si nécéssaire (remote-name = `origin` en général c'est verifiable avec la commande de dessus `git remote -v`) (new URL c'est l'URL de votre fork):
+Pour changer le remote si nécéssaire (remote-name = `origin` en général c'est verifiable avec la commande de dessus `git remote -v`) (new URL c'est l'URL de votre fork, changer zachjve par votre pseudo github) :
 
 ```bash
-git remote set-url <remote-name> <new-url>
+git remote set-url <remote-name> https://github.com/zachjve/Smart-Garden-Repo.git
 ```
 
 Pour push une branch la première fois il faut `upstream` la branche (remplacer `<feature-branch>` par un nom de votre branche) :
@@ -59,9 +59,15 @@ Pour push une branch la première fois il faut `upstream` la branche (remplacer 
 git push --set-upstream origin <feature-branch>
 ```
 
+Pour les push suivant sur cette même branche :
 
+```bash
+git push
+```
 
-Une fois le travail terminé et une fois que tout fonctionne sur la branche il faut `merge` votre branche avec votre `main` (du fork) pour cela :
+Maintenant vous pouvez voir votre travail sur github sur la branche que vous avez créée :)
+
+Une fois le travail sur la branche terminé (la fin d'une fonctionnalité) et une fois que tout fonctionne sur la branche il faut `merge` votre branche avec votre `main` (du fork) pour cela :
 
 1. Se replacer sur le `main` (du fork) 
 
