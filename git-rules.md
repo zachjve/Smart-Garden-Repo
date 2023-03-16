@@ -39,9 +39,19 @@ git merge main
 
 ###### Commencer à travailler votre fonctionnalitée sur la branch. 
 
-Une fois que la branche est créé et contient toute les MAJ `travailler sur votre fonctionnalitée`. . . . . . . . . . >
+Une fois que la branche est créé et contient toute les MAJ `travailler sur votre fonctionnalitée`. Pendant que vous travaillez vous devez faire vos `add` vos `commit` et `push` toujours sur la branche de fonctionnalitée en s'assurant de bien push vers la branche. 
 
-Pendant que vous travailler vous devez faire vos add vos commit et push toujours sur la branche de fonctionnalitée en s'assurant de bien push vers la branche. 
+Pour cela verifier le remote (l'endroit ou sera push le travail) :
+
+```bash
+git remote -v
+```
+
+Pour changer le remote si nécéssaire (remote-name = `origin` en général c'est verifiable avec la commande de dessus `git remote -v`) :
+
+```bash
+git remote set-url <remote-name> <new-url>
+```
 
 Une fois le travail terminé et une fois que tout fonctionne sur la branche il faut `merge` votre branche avec votre `main` (du fork) pour cela :
 
