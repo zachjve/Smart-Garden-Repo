@@ -19,7 +19,7 @@ Dans votre fork :
 ##### Créer des branches de fonctionnalités
 Chaque membre de l'équipe doit créer des branches de fonctionnalités pour développer de nouvelles fonctionnalités ou résoudre des problèmes spécifiques. Pour créer une nouvelle branche à partir de `main` :
 
-Créer et basculer vers une nouvelle branche pour votre fonctionnalité (remplacer `<feature-branch>` par un nom descriptif pour votre branche) :
+Créer et basculer vers une nouvelle branche pour votre fonctionnalité (remplacer `<feature-branch>` par le nom de votre branche) :
 
 ```bash
 git checkout -b <feature-branch>
@@ -47,11 +47,19 @@ Pour cela verifier le remote (l'endroit ou sera push le travail) :
 git remote -v
 ```
 
-Pour changer le remote si nécéssaire (remote-name = `origin` en général c'est verifiable avec la commande de dessus `git remote -v`) :
+Pour changer le remote si nécéssaire (remote-name = `origin` en général c'est verifiable avec la commande de dessus `git remote -v`) (new URL c'est l'URL de votre fork):
 
 ```bash
 git remote set-url <remote-name> <new-url>
 ```
+
+Pour push une branch la première fois il faut `upstream` la branche (remplacer `<feature-branch>` par un nom de votre branche) :
+
+```bash
+git push --set-upstream origin <feature-branch>
+```
+
+
 
 Une fois le travail terminé et une fois que tout fonctionne sur la branche il faut `merge` votre branche avec votre `main` (du fork) pour cela :
 
