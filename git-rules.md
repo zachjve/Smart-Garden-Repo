@@ -8,23 +8,65 @@ Un fork est une copie du dépôt d'origine dans le compte GitHub du contributeur
 
 Pour créer son fork :
 
-1. 
+1. Se rendre sur l'organisation et cliquer sur le repo.
+2. Cliquer sur fork en haut a gauche.
+3. Créer un fork.
+
+##### Mettre à jour le fork
+OK
 
 Dans votre fork :
 ##### Créer des branches de fonctionnalités
 Chaque membre de l'équipe doit créer des branches de fonctionnalités pour développer de nouvelles fonctionnalités ou résoudre des problèmes spécifiques. Pour créer une nouvelle branche à partir de `main` :
 
-1. Mettez à jour votre dépôt local avec la dernière version de `main` :
-
-```bash
-git checkout main git pull origin main
-```
-
-2. Créez et basculez vers une nouvelle branche pour votre fonctionnalité (remplacer `<feature-branch>` par un nom descriptif pour votre branche) :
+Créer et basculer vers une nouvelle branche pour votre fonctionnalité (remplacer `<feature-branch>` par un nom descriptif pour votre branche) :
 
 ```bash
 git checkout -b <feature-branch>
 ```
+
+Pour verifier que vous êtes sur votre branch de fonctionnalitée :
+
+```bash
+git branch
+```
+
+Pour bien faire en sorte que la branche contient tout les MAJ du main  :
+
+```bash
+git merge main
+```
+
+###### Commencer à travailler votre fonctionnalitée sur la branch. 
+
+Une fois que la branche est créé et contient toute les MAJ `travailler sur votre fonctionnalitée`. . . . . . . . . . >
+
+Pendant que vous travailler vous devez faire vos add vos commit et push toujours sur la branche de fonctionnalitée en s'assurant de bien push vers la branche. 
+
+Une fois le travail terminé et une fois que tout fonctionne sur la branche il faut `merge` votre branche avec votre `main` (du fork) pour cela :
+
+1. Se replacer sur le `main` (du fork) 
+
+```bash
+git checkout main
+```
+
+2. Merge la branche sur la branche main, (remplacer `<feature-branch>` par un nom descriptif pour votre branche) :
+
+```bash
+git merge <feature-branch>
+```
+
+
+
+
+
+Il faut `push votre travail vers votre fork` pour tester que vos ajouts fonctionnent bien avec le code global pour ça il faut veiller à ce que votre fork contienne bien les derniers ajouts du repository de l'organisation.
+
+Une fois le travail terminé il faut `merge` votre branch avec votre `main` (du fork) 
+
+
+
 
 4.  **Gérer les pull requests :** Lorsque vous ou un membre de votre équipe avez terminé le travail sur une branche de fonctionnalité, créez une pull request pour proposer les modifications à intégrer dans la branche `main`. Les autres membres de l'équipe doivent passer en revue les modifications, discuter et éventuellement demander des ajustements avant de fusionner la pull request.
     
