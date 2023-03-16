@@ -67,7 +67,10 @@ git push
 
 Maintenant vous pouvez voir votre travail sur github sur la branche que vous avez créée :)
 
-Une fois le travail sur la branche terminé (la fin d'une fonctionnalité) et une fois que tout fonctionne sur la branche il faut `merge` votre branche avec votre `main` (du fork) pour cela :
+Une fois le travail sur la branche terminé (la fin d'une fonctionnalité) et une fois que tout fonctionne sur la branche il faut `merge` votre branche avec votre `main` (du fork) mais **avant on va mettre à jour le fork avec le repository de l'organisation :**
+
+##### Mettre à jour le fork
+
 
 1. Se replacer sur le `main` (du fork) 
 
